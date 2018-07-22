@@ -1,0 +1,319 @@
+Basic Programming Concepts
+
+- Data Types and Variables
+- Operators
+- Conditional Constructs (if..else, switch..case, ?..:)
+- Looping Constructs (for, while, do..while)
+- arrays
+- functions
+
+
+
+C++ 
+
+C++ is an object oriented programming language.
+
+
+
+Data Types in C++ Programming Language
+
+Primitive Types
+Primitive types or pre-defined types are data types which are already defined in the programming language.
+
+int 
+char
+float
+double
+void
+
+Non Primitive Types
+Non Primitive types need to be defined in the program before using them.
+
+struct
+class
+union
+enums
+
+
+Data Types Modifiers
+
+short								(int)
+long 								(int, double)
+signed			(default)			(int, char, float, double)
+unsigned	 						(int, char)
+
+
+Size and Range of Data Types
+
+short int		1 Byte
+int 			2 Bytes				
+long int 		4 Bytes
+
+char          	1 Byte 		(2 Bytes in 64 bit compilers)
+
+float 			4 Bytes
+
+double 			8 Bytes
+long double 	10 Bytes
+
+void  			0 Bytes
+
+
+
+Range Computation
+
+-Ve 	: 		-2^(N-1)
++Ve 	: 		 2^(N-1)-1
+
+
+Range of 8 Bits Data Type
+
+-128 to 127
+
+
+
+Variable Declaration
+
+A variable is a data store that saves program's data in the memory. 
+
+Syntax:
+
+
+<data-type> <var-name>;
+
+<> : Mandatory
+[] : Optional
+
+
+e.g.
+
+
+short int roll;		
+long int id;
+
+
+
+float   Single Precision    (.DDDDDD)
+double  Double Precision	(.DDDDDDDDDD....   16 digits)
+
+
+e.g.
+
+
+char a;
+int b;
+float c;
+double d;
+
+
+Multiple Variable Declaration
+
+int a,b,c;
+
+
+Rules for Variable Declaration:
+
+1. Variable names can use alphabet, numbers and _ (underscore) characters only.
+2. Variable names must start with either an alphabet or _ (underscore) character.
+
+
+
+E.g
+
+1. myvar							OK
+2. var1 							OK
+3. var_1 							OK
+4. 1var 							NOT
+5. _1var							OK
+6. my var 							NOT
+7. interest* 						NOT
+
+
+Data Type Compatibilities:
+
+1. int and char 		(char->int)
+2. int and float 		(int-float)
+3. int and double 		(int-double)
+4. float and char 		(NO)
+5. float and double 	(float->double)
+6. double and char 		(NO)
+
+
+
+
+
+C++ Operators
+An operator is a symbolic instruction.
+
+
+1. Arithmetic (+, -, /, *, %)
+
+
+5/2 = 2
+
+5.0/2  : Implict Casting
+5.0/2.0  : 2.5
+
+
+5/'2' : Compatible
+5/50 
+ 
+5.0/'2' : Non Compatible
+
+
+
+Associativity : Left to Right
+Precedence : Higher than Relational and Logical operators, Lower than ()
+
+1st Order : / * %
+2nd Order : + -
+
+
+
+2. Relational (>, <, >=, <=, !=, ==)
+Yields a boolean result
+
+Precedence : Lower than Arithmetica Operators, Higher than Logical Operators
+Associativiey : Left to Right
+
+1st Order : >, >=, <, <=
+2nd Order : != ==
+
+
+
+3. Logical (&&, ||, !)
+Yields a boolean result
+
+Precedence : Lower than Arithmetic and Relational Operators
+Associativiey : Left to Right
+
+1st Order : &&
+2nd Order : ||
+3rd Order : !
+
+
+
+4. Assignment (=, +=, -=, /=, *=, %=)
+
+a=5;			//Assignment expression
+
+myfirstvar+=5;			//Shorthand Assignment (myfirstvar=myfirstvar+5)
+
+
+5. Incremand and Decrement (++, --)
+Increase or Decrease the value of a variable by 1.
+
+Usage
+
+
+a++;  	Post Increment
+or
+++a;	Pre Increment
+
+a--;    Post Decrement
+or
+--a;	Pre Decrement
+
+
+
+a=5;
+b=++a; 			//B=6, A=6 				Precedence : Of Highest Level
+
+a=5;
+b=a++;			//B=5, A=6				Precedence : Of Lowest Level
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
